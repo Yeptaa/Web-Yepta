@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="logo.png" type="png">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Gallery</title>
+  <link rel="stylesheet" href="galery.css">
+</head>
+<body>
+  <header>
+    <div class="media">
+      <ul>
+        <li><a href="https://www.tiktok.com/@epta_langit?is_from_webapp=1&sender_device=pc"><img src="icons8-whatsapp-50.png" alt="" ></a></li>
+        <li><a href="https://www.instagram.com/epta_n_langit/profilecard/?igsh=Nm5qeW01ZzV5bGV1"> <img src="icons8-instagram-50.png" alt=""></a></li>
+        <li><a href="https://www.facebook.com/yudikaadika.fals"><img src="icons8-facebook-30.png" alt=""> </a></li>
+      </ul>
+    </div>
+    <div class="header-content">
+      <h1>Portfolio Photography</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="galery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="gallery" class="gallery-section">
+    <h2>Explore My Work</h2>
+    <div class="gallery-container">
+      <!-- Galeri Foto -->
+      <div class="gallery-item" onclick="openModal(0)">
+        <img src="1.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(1)">
+        <img src="13.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(2)">
+        <img src="24.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(3)">
+        <img src="19.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(4)">
+        <img src="12.jpg" >
+      </div>
+
+      <div class="gallery-item" onclick="openModal(5)">
+        <img src="8.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(6)">
+        <img src="7.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(7)">
+        <img src="5.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(8)">
+        <img src="9.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(9)">
+        <img src="15.jpg" >
+      </div>
+
+      <div class="gallery-item" onclick="openModal(10)">
+        <img src="21.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(11)">
+        <img src="23.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(12)">
+        <img src="2.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(13)">
+        <img src="3.jpg">
+      </div>
+      <div class="gallery-item" onclick="openModal(14)">
+        <img src="25.jpg">
+      </div>
+
+      <div class="gallery-item" onclick="openModal(15)">
+        <img src="17.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(16)">
+        <img src="10.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(17)">
+        <img src="33.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(18)">
+        <img src="28.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(19)">
+        <img src="29.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(19)">
+        <img src="30.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(19)">
+        <img src="31.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(19)">
+        <img src="32.jpg" >
+      </div>
+      <div class="gallery-item" onclick="openModal(19)">
+        <img src="27.jpg" >
+      </div>
+    </div>
+  </section>
+
+  <div id="photoModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+
+  <footer>
+    <a>© Copyright Yepta</a>
+    </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

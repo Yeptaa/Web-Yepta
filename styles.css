@@ -1,0 +1,212 @@
+  /* General styles */
+  body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* To prevent horizontal scrolling */
+  }
+
+  header {
+    position: relative;
+    background-image: url('stars-1626550_1920.jpg'); /* Ganti dengan gambar galaxy */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Make header take full height of the screen */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 20px;
+  }
+
+  header .media {
+    background-color: rgba(255, 255, 255, 0.552);
+    border-radius:10px;
+    position: absolute;
+    top: 30px; /* Jarak dari atas */
+    right: 30px; /* Jarak dari kanan */
+  }
+
+  header .media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Menjadikan elemen-elemen anak berjajar horizontal */
+    gap: 10px; /* Jarak antar ikon */
+  }
+
+  header .media ul li a img {
+    width: 30px; /* Ukuran ikon kecil */
+    height: 30px; /* Menjaga rasio ukuran */
+  }
+
+  header .header-content {
+    z-index: 10;
+  }
+
+  header h1 {
+    font-size: 2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  header h1:hover {
+    color: black;
+    text-shadow: 
+    0 0 5px #e600ff,  /* Cahaya dalam */
+    0 0 10px #ffffff, /* Cahaya luar */
+    0 0 20px #8233CB, /* Warna neon pertama */
+    0 0 30px #8233CB, /* Warna neon kedua */
+    0 0 40px #8233CB, /* Warna neon ketiga */
+    0 0 50px #8233CB; /* Efek glowing lebih jauh *
+    color: #2F1B41; /* Warna berubah saat kursor hover (tomato) */
+  }
+
+  nav ul {
+    perspective: 1000px;
+    box-shadow: 0 0 90px rgba(88, 0, 94, 0.7), 0 0 120px rgba(215, 74, 208, 0.9); 
+    border-radius:10px;
+    margin-left: 31%;
+    margin-right: 31%;
+    background-color: rgba(171, 19, 182, 0.5);
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font yang lebih modern */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease; /* Efek transisi saat hover */
+  }
+
+  nav ul li a:hover {
+    color: black;
+     text-shadow: 
+    0 0 5px #e600ff,  /* Cahaya dalam */
+    0 0 10px #ffffff, /* Cahaya luar */
+    0 0 20px #d400d4, /* Warna neon pertama */
+    0 0 30px #d400d4, /* Warna neon kedua */
+    0 0 40px #d400d4, /* Warna neon ketiga */
+    0 0 50px #d400d4; /* Efek glowing lebih jauh *
+    color: #2F1B41; /* Warna berubah saat kursor hover (tomato) */
+    transform: scale(1.1); /* Efek zoom saat hover */
+  }
+
+  /* Home section - Fullscreen background */
+  .home-section {
+    position: relative;
+    background: rgb(0, 0, 0); /* Dark overlay to make text readable */
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+    z-index: 1; /* Make sure home-section is on top */
+
+  }
+
+  .home-section h2 {
+
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  /* Earth image styles */
+  .earth-container {
+    position: absolute;
+    bottom: -300px; /* Setengah gambar tenggelam di bawah */
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden; /* Clipping part of the earth image */
+    z-index: 0; /* Ensure that earth-container is behind the home-section */
+  }
+
+  .earth {
+    border-radius:100% ;
+  
+    width: 60em;
+    animation: rotateEarth 20s linear infinite; /* Rotation animation */
+    transform-origin: center center; /* Ensures rotation happens around the center */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+  }
+
+  /* Earth rotating animation */
+  @keyframes rotateEarth {
+    0% {
+      transform: rotate(0deg); /* Start position */
+    }
+    100% {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+
+  /* Hover effect to scale up */
+  .earth:hover {
+    transform: scale(1.1); /* Slightly scale up the earth */
+  }
+
+  /* Footer Styles (apply globally) */
+  footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center; /* Menyusun teks di tengah */
+    padding: 10px 0;
+    width: 100%; /* Pastikan footer mengambil lebar penuh */
+    position: relative;
+  }
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav ul li {
+      display: block;
+      margin: 10px 0; 
+    }
+
+    .home-section h2 {
+      font-size: 2em;
+    }
+
+    section {
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #517194;
+    }
+  }
+  .home-section{
+    position: relative;
+    position: sticky;
+
+    
+  }
+  .coba {
+    height: 10%;
+    bottom: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 60px;
+  background-color: antiquewhite;
+    opacity: 90%;
+    background-origin: border-box;
+    margin-bottom: -38%;
+    border-radius: 100%;
+    overflow: hidden; /* Menyembunyikan bagian yang keluar dari lingkaran */
+    box-shadow: 0 0 90px rgba(255, 255, 255, 0.813), 0 0 120px rgba(180, 180, 180, 0.813); /* Efek cahaya orange kehitaman */
+    perspective: 1000px; /* Menambahkan perspektif 3D */
+  }
+  
+  
+
